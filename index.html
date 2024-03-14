@@ -19,10 +19,11 @@
     </div> -->
 
     <div>
-        <h1>First heading</h1>
-        <h1>Second heading</h1>
-        <h1>Third heading</h1>
-        <h1>Fourth heading</h1>
+        <h1 class="message">First heading</h1>
+        <div class="container">
+            <h1 class="message">Second heading</h1>
+            <h1 class="message">Third heading</h1>
+        </div>
     </div>
     <script>
         // let msg = document.getElementById("message");
@@ -31,8 +32,11 @@
         // let btn = document.getElementsByName("language");
         // console.log(btn)
 
-        let heading = document.getElementsByTagName("h1");
-        console.log(heading)
+        // let heading = document.getElementsByTagName("h1");
+        // console.log(heading)
+        // let cont = document.getElementById("container");
+        let msg = document.getElementsByClassName("message");
+        console.log(msg);
     </script>
 </body>
 

@@ -36,7 +36,12 @@
         <p>Welcome to G developer 3</p>
         <p>Welcome to G developer 4</p>
     </div> -->
-
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Project</li>
+    </ul>
 
     <script>
         // let msg = document.getElementById("message");
@@ -67,13 +72,19 @@
         // console.log(second.previousElementSibling);
         // console.log(second.nextElementSibling);
 
-        let div = document.createElement("div");
-        div.innerHTML = "<p>Hello World </p>";
-        // document.body.appendChild(div);
-        div.id = "title"
-        div.className = "title2"
+        // let div = document.createElement("div");
+        // div.innerHTML = "<p>Hello World </p>";
+        // // document.body.appendChild(div);
+        // div.id = "title"
+        // div.className = "title2"
 
-        console.log(div);
+        // console.log(div);
+
+        let menu = document.getElementById("menu");
+        let list = document.createElement("li")
+        list.innerHTML = "Contact";
+
+        menu.appendChild(list);
     </script>
 </body>
 

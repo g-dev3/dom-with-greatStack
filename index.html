@@ -30,12 +30,14 @@
         <p class="text">Welcome to G Developer</p>
     </div> -->
 
-    <div class="title">
+    <!-- <div class="title">
         <p>Welcome to G developer 1</p>
         <p class="second">Welcome to G developer 2</p>
         <p>Welcome to G developer 3</p>
         <p>Welcome to G developer 4</p>
-    </div>
+    </div> -->
+
+
     <script>
         // let msg = document.getElementById("message");
         // console.log(msg);
@@ -61,9 +63,14 @@
         // console.log(parent.lastElementChild);
         // console.log(parent.childNodes);
 
-        let second = document.querySelector(".second");
-        console.log(second.previousElementSibling);
-        console.log(second.nextElementSibling);
+        // let second = document.querySelector(".second");
+        // console.log(second.previousElementSibling);
+        // console.log(second.nextElementSibling);
+
+        let div = document.createElement("div");
+        div.innerHTML = "<p>Hello World </p>";
+        document.body.appendChild(div);
+        console.log(div);
     </script>
 </body>
 

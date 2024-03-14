@@ -18,12 +18,16 @@
         <input type="radio" name="language" value="Python">
     </div> -->
 
-    <div>
+    <!-- <div>
         <h1 class="message">First heading</h1>
         <div id="container">
             <h1 class="message">Second heading</h1>
             <h1 class="message">Third heading</h1>
         </div>
+    </div> -->
+
+    <div class="title">
+        <p class="text">Welcome to G Developer</p>
     </div>
     <script>
         // let msg = document.getElementById("message");
@@ -38,9 +42,12 @@
         // let cont = document.getElementById("container");
         // let msg = cont.getElementsByClassName("message");
         // console.log(msg);
-        let cont = document.getElementById("container")
-        let msg = cont.querySelectorAll('.message');
-        console.log(msg);
+        // let cont = document.getElementById("container")
+        // let msg = cont.querySelectorAll('.message');
+        // console.log(msg);
+
+        let txt = document.querySelector(".text");
+        console.log(txt.parentNode);
     </script>
 </body>
 

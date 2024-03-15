@@ -101,10 +101,14 @@
         // menu.insertAdjacentHTML("beforeend", "<li>2</li>")
         // menu.insertAdjacentHTML("afterend", "<li>02</li>")
         // menu.insertAdjacentHTML("afterbegin", "<li>1</li>")
-        let rough = document.createElement("li")
-        rough.innerText = "New Home"
-        first = menu.firstElementChild
-        menu.replaceChild(rough, first)
+
+        // let rough = document.createElement("li")
+        // rough.innerText = "New Home"
+        // first = menu.firstElementChild
+        // menu.replaceChild(rough, first)
+
+        let newNode = menu.cloneNode(true)
+        console.log(newNode);
     </script>
 </body>
 

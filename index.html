@@ -90,18 +90,21 @@
         // console.log(menu.innerText)     
         // menu.textContent = "Goal"
         // menu.innerHTML = "<p>Helo!</p>"
-        let list = document.createElement("li")
-        list.innerHTML = "geeks"
-        menu.appendChild(list)
+        // let list = document.createElement("li")
+        // list.innerHTML = "geeks"
+        // menu.appendChild(list)
         // menu.after(list)
 
         // menu.prepend(list)
 
-        menu.insertAdjacentHTML("beforebegin", "<li>01</li>")
-        menu.insertAdjacentHTML("beforeend", "<li>2</li>")
-        menu.insertAdjacentHTML("afterend", "<li>02</li>")
-        menu.insertAdjacentHTML("afterbegin", "<li>1</li>")
-
+        // menu.insertAdjacentHTML("beforebegin", "<li>01</li>")
+        // menu.insertAdjacentHTML("beforeend", "<li>2</li>")
+        // menu.insertAdjacentHTML("afterend", "<li>02</li>")
+        // menu.insertAdjacentHTML("afterbegin", "<li>1</li>")
+        let rough = document.createElement("li")
+        rough.innerText = "New Home"
+        first = menu.firstElementChild
+        menu.replaceChild(rough, first)
     </script>
 </body>
 

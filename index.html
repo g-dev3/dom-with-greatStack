@@ -46,7 +46,8 @@
     <!-- <div id="title" class="main message">G Developer</div> -->
 
     <div id="container">
-        <button type="button" onclick="dispalymsg()">Click Here</button>
+        <!-- <button id="btn" onclick="dispalymsg()">Click Here</button> -->
+        <button id="btn">Click here</button>
     </div>
     <script>
         // let msg = document.getElementById("message");
@@ -153,10 +154,17 @@
 
         // console.log(title)
 
-        function onclick(){
-            console.log('clicked.')
-        }
+        // function onclick(){
+        //     console.log('clicked.')
+        // }
 
+        let btn = document.getElementById('btn')
+
+        btn.onclick = function () {
+            // console.log('button clicked')
+            console.log(this.id)
+        }
+        btn.onclick = null
     </script>
 </body>
 

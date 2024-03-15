@@ -107,10 +107,12 @@
         // first = menu.firstElementChild
         // menu.replaceChild(rough, first)
 
-        // let newNode = menu.cloneNode(true)
+        let newNode = menu.cloneNode(true)
         // console.log(newNode);
 
-        menu.removeChild(menu.lastChild)
+        // menu.removeChild(menu.lastChild)
+
+        menu.insertBefore(newNode, menu.firstChild)
     </script>
 </body>
 

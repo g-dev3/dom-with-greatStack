@@ -40,7 +40,7 @@
         <li>Home</li>
         <li>About</li>
         <li>Blog</li>
-        <li>Project</li>
+        <li style="display: none;">Project</li>
     </ul>
 
     <script>
@@ -81,10 +81,14 @@
         // console.log(div);
 
         let menu = document.getElementById("menu");
-        let list = document.createElement("li")
-        list.innerHTML = "Contact";
+        // let list = document.createElement("li")
+        // list.innerHTML = "Contact";
 
-        menu.appendChild(list);
+        // menu.appendChild(list);
+
+        // console.log(menu.textContent)
+        // console.log(menu.innerText)     
+        menu.textContent = "Goal"
     </script>
 </body>
 

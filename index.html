@@ -36,13 +36,13 @@
         <p>Welcome to G developer 3</p>
         <p>Welcome to G developer 4</p>
     </div> -->
-    <ul id="menu">
+    <!-- <ul id="menu">
         <li>Home</li>
         <li>About</li>
         <li>Blog</li>
         <li style="display: none;">Project</li>
-    </ul>
-
+    </ul> -->
+    <input type="text" id="username" placeholder="Username">
     <script>
         // let msg = document.getElementById("message");
         // console.log(msg);
@@ -80,14 +80,14 @@
 
         // console.log(div);
 
-        let menu = document.getElementById("menu");
+        // let menu = document.getElementById("menu");
         // let list = document.createElement("li")
         // list.innerHTML = "Contact";
 
         // menu.appendChild(list);
 
         // console.log(menu.textContent)
-        // console.log(menu.innerText)     
+        // console.log(menu.innerText)
         // menu.textContent = "Goal"
         // menu.innerHTML = "<p>Helo!</p>"
         // let list = document.createElement("li")
@@ -107,12 +107,16 @@
         // first = menu.firstElementChild
         // menu.replaceChild(rough, first)
 
-        let newNode = menu.cloneNode(true)
+        // let newNode = menu.cloneNode(true)
         // console.log(newNode);
 
         // menu.removeChild(menu.lastChild)
 
-        menu.insertBefore(newNode, menu.firstChild)
+        // menu.insertBefore(newNode, menu.firstChild)
+
+        let inputbox = document.getElementById("username")
+
+        console.log(inputbox.attributes)
     </script>
 </body>
 

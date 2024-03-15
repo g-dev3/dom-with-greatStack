@@ -89,7 +89,13 @@
         // console.log(menu.textContent)
         // console.log(menu.innerText)     
         // menu.textContent = "Goal"
-        menu.innerHTML = "<p>Helo!</p>"
+        // menu.innerHTML = "<p>Helo!</p>"
+        let list = document.createElement("li")
+        list.innerHTML = "geeks"
+        menu.appendChild(list)
+        menu.after(list)
+
+        
     </script>
 </body>
 

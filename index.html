@@ -95,7 +95,12 @@
         menu.appendChild(list)
         // menu.after(list)
 
-        menu.prepend(list)
+        // menu.prepend(list)
+
+        menu.insertAdjacentHTML("beforebegin", "<li>01</li>")
+        menu.insertAdjacentHTML("beforeend", "<li>2</li>")
+        menu.insertAdjacentHTML("afterend", "<li>02</li>")
+        menu.insertAdjacentHTML("afterbegin", "<li>1</li>")
 
     </script>
 </body>

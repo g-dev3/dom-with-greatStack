@@ -160,11 +160,15 @@
 
         let btn = document.getElementById('btn')
 
-        btn.onclick = function () {
-            // console.log('button clicked')
-            console.log(this.id)
-        }
-        btn.onclick = null
+        // btn.onclick = function () {
+        //     // console.log('button clicked')
+        //     console.log(this.id)
+        // }
+        // btn.onclick = null
+
+        btn.addEventListener('click', (event) => 
+            console.log(event.type))
+        
     </script>
 </body>
 

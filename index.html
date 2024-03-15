@@ -42,7 +42,10 @@
         <li>Blog</li>
         <li style="display: none;">Project</li>
     </ul> -->
-    <input type="text" id="username" placeholder="Username" style="background-color: red; font-size: 20px;">
+    <!-- <input type="text" id="username" placeholder="Username" style="background-color: red; font-size: 20px;"> -->
+
+
+    <div id="title" class="main message">G Developer</div>
     <script>
         // let msg = document.getElementById("message");
         // console.log(msg);
@@ -114,7 +117,7 @@
 
         // menu.insertBefore(newNode, menu.firstChild)
 
-        let inputbox = document.getElementById("username");
+        // let inputbox = document.getElementById("username");
 
         // console.log(inputbox.attributes)
 
@@ -129,10 +132,13 @@
         // inputbox.removeAttribute("placeholder")
         // console.log(inputbox)
 
-        inputbox.style.backgroundColor;
-        inputbox.style.padding = "10px"
-        inputbox.style.cssText += "width: 200px; margin-left:12px"
-        console.log(inputbox.style)
+        // inputbox.style.backgroundColor;
+        // inputbox.style.padding = "10px"
+        // inputbox.style.cssText += "width: 200px; margin-left:12px"
+        // console.log(inputbox.style)
+        let title = document.getElementById("title")
+        title.className += " new"
+        console.log(title)
     </script>
 </body>
 
